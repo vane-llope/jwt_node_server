@@ -1,0 +1,21 @@
+
+post http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "email" : "zahra@gmail.com"
+}
+
+###
+GET http://localhost:3000/login
+###
+GET http://localhost:3000/protected
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNoYXVuQGdtYWlsLmNvbSIsImlhdCI6MTY1OTYxMTYwNCwiZXhwIjoxNjU5NjEyODA0fQ.gStOWhqNen2I9apM-yc6ZAJogVZeTAbXvu3sS4VBEHc
+
+###
+GET http://localhost:3000/logout
+
+###
+GET http://localhost:3000/refreshToken
+
+
